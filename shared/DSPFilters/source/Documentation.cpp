@@ -298,6 +298,8 @@ Filter family namespaces
 
 namespace {
 
+#if 0
+
 void UsageExamples ()
 {
   // create a two channel audio buffer
@@ -425,6 +427,7 @@ void UsageExamples ()
 
     // calculate response at frequency 440 Hz
     Dsp::complex_t response = f.response (440./44100);
+	#pragma unused(response)
   }
 
   // Extract coefficients from a Cascade
@@ -452,5 +455,7 @@ void UsageExamples ()
     std::cout << os.str();
   }
 }
+
+#endif // 0
 
 }
