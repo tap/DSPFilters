@@ -339,3 +339,4 @@ ComplexPair BandStopTransform::transform (complex_t c)
 }
 
 }
+
